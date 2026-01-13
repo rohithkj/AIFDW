@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIND KRAFT 2K25</title>
+    <!-- Link to external CSS for Experiment 2 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>MIND KRAFT 2K25</h1>
+
+    <!-- Flexbox Container for Layout -->
+    <div class="main-layout">
+        
+        <!-- Media Section -->
+        <div class="media-section">
+            <h3>Event Banner</h3>
+            <img src="C:\Users\urk23cs5043\Downloads\1000296609.jpg" alt="Event Banner" width="100%">
+
+            <h3>Promotional Video</h3>
+            <video width="100%" controls>
+                <source src="C:\Users\urk23cs5043\Downloads\1000296608.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Intro Audio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <hr>
+
+        <!-- Registration Section -->
+        <div class="form-section">
+            <h2>Register for Event</h2>
+            <form action="#" method="post">
+                <p>Full Name: <br>
+                <input type="text" name="username" required></p>
+
+                <p>Email: <br>
+                <input type="email" name="useremail" required></p>
+
+                <p>Event Date: <br>
+                <input type="date" name="eventdate"></p>
+
+                <p>Gender: <br>
+                <input type="radio" name="gender" value="m"> Male
+                <input type="radio" name="gender" value="f"> Female</p>
+
+                <p>Select Workshop: <br>
+                <select name="workshop">
+                    <option value="web">Web Development</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="cyber">Cyber Security</option>
+                </select></p>
+
+                <p>Profile Picture: <br>
+                <input type="file" name="userfile"></p>
+
+                <p>Comments: <br>
+                <textarea name="message" rows="4" cols="30"></textarea></p>
+
+                <input type="submit" value="Submit Registration" class="submit-btn">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
